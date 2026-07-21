@@ -1,0 +1,884 @@
+# Algorithms Notes
+---
+
+# Course Topics
+This course covers the following topics:
+
+1. Algorithm
+2. Measuring Performance
+3. Time Complexity
+4. Space Complexity
+5. Big-O Notation
+6. Mathematical Algorithms
+7. Sorting Algorithms
+8. Searching Algorithms
+9. Miscellaneous Algorithms & Problem Solving
+
+---
+
+# Prerequisites
+* JavaScript Fundamentals
+* Advanced JavaScript
+* ES2015 (ES6+) Features
+
+---
+
+# What is an Algorithm?
+> An **algorithm** is a set of **well-defined instructions** to solve a particular problem.An algorithm takes an **input**, performs a sequence of steps, and produces an **output**.
+
+```
+Input
+   ↓
+Algorithm
+   ↓
+Output
+```
+
+---
+
+---
+
+# Characteristics of an Algorithm
+
+A good algorithm should have the following characteristics:
+### 1. Well-defined Inputs and Outputs
+The algorithm should clearly specify:
+* What inputs it requires.
+* What output it produces.
+
+---
+### 2. Clear and Unambiguous Steps
+Every instruction should be:
+* Easy to understand
+* Clearly defined
+* No confusion
+---
+
+### 3. Language Independent
+
+# Why Learn Algorithms?
+As a developer, you will constantly solve problems.
+Learning algorithms helps you:
+* Solve problems efficiently.
+* Learn multiple approaches to the same problem.
+* Understand the trade-offs between different solutions.
+* Write faster and better code.
+
+**Important**
+
+One problem can often be solved using many different algorithms.
+
+Each algorithm has its own advantages and disadvantages.
+
+---
+
+# Algorithm Analysis
+Many algorithms can solve the same problem.
+Example:
+A list of numbers can be sorted using:
+* Bubble Sort
+* Selection Sort
+* Insertion Sort
+* Merge Sort
+* Quick Sort
+
+Question:
+**Which one is the best?**
+To answer this, we analyze the algorithm's performance.
+---
+
+## Absolute Running Time is Not Reliable
+The actual execution time depends on many factors:
+* Programming language
+* Computer hardware
+* CPU speed
+* RAM
+* Operating System
+* Other running programs
+Therefore, absolute time (seconds or milliseconds) is **not** a good way to compare algorithms.
+---
+
+# Time Complexity
+Time Complexity measures:
+> How much time an algorithm takes as the input size increases.It tells us **how the running time grows**.It is **not actual seconds**.
+
+---
+
+# Space Complexity
+Space Complexity measures:
+> How much extra memory an algorithm uses as the input size increases.
+
+---
+
+# Why Measure Against Input Size?
+Measuring performance using input size makes comparison:
+* Machine independent
+* Language independent
+* More accurate
+---
+
+# Choosing the Right Algorithm
+There is **no perfect algorithm**.The best algorithm depends on your constraints.
+
+### If speed is important
+Choose a faster algorithm, even if it uses more memory.
+Example:
+```
+Fast
+More Memory
+```
+
+---
+
+### If memory is limited
+Choose an algorithm that uses less memory, even if it is slower.
+Example:
+```
+Less Memory
+Slightly Slower
+```
+
+---
+
+# Representing Complexity
+We use **Asymptotic Notations**.
+These are mathematical tools for describing algorithm complexity.
+
+Main notations:
+## 1. Big-O (O)
+Represents the **Worst Case**.
+Most commonly used.
+---
+
+## 2. Big-Omega (Ω)
+Represents the **Best Case**.
+---
+
+## 3. Big-Theta (Θ)
+Represents the **Average/Tight Bound**.
+---
+
+# Big-O Notation
+
+Big-O describes how an algorithm behaves as the input size grows.
+
+It focuses on:
+
+* Growth rate
+* Worst-case performance
+
+Instead of exact running time.
+
+### Important Characteristics
+
+### 1. Expressed in terms of input size
+
+Example:
+
+```
+n = number of elements
+```
+
+---
+
+### 2. Focuses on the bigger picture
+
+Ignore:
+
+* CPU speed
+* Programming language
+* Small constant differences
+
+Focus only on how performance changes as `n` grows.
+
+---
+
+# Big-O Time Complexity Example
+### JavaScript Code
+```javascript
+function summation(n) {
+    let sum = 0;
+
+    for (let i = 1; i <= n; i++) {
+        sum += i;
+    }
+
+    return sum;
+}
+```
+
+### Example
+```
+summation(4)
+1 + 2 + 3 + 4 = 10
+```
+
+### How to Analyze
+Count how many times each statement executes.
+
+```
+let sum = 0          → 1 time
+
+for loop             → n times
+
+sum += i             → n times
+
+return sum           → 1 time
+```
+
+Total operations:
+```
+1 + n + n + 1
+= 2n + 2
+```
+
+Ignoring constants:
+```
+O(n)
+```
+
+Therefore,
+**Time Complexity = O(n)**
+---
+
+# Key Takeaways
+* An algorithm is a step-by-step solution to a problem.
+* Algorithms are language independent.
+* One problem can have multiple algorithms.
+* We compare algorithms using input size, not actual execution time.
+* Time Complexity measures execution time growth.
+* Space Complexity measures memory usage growth.
+* Big-O represents the worst-case complexity.
+* Focus on growth rate rather than exact execution time.
+* The summation algorithm using a loop has **O(n)** time complexity.
+
+---
+
+## Ignore Constants
+When calculating Big-O, we focus on **how the algorithm grows**, not small constant values.
+
+Example:
+
+```
+n + 2
+```
+
+Suppose:
+
+```
+n = 100
+100 + 2 = 102
+
+n = 1,000
+1000 + 2 = 1002
+
+n = 10,000
+10000 + 2 = 10002
+
+n = 1,000,000
+1000000 + 2 = 1000002
+```
+
+Notice that as `n` becomes very large, the constant `+2` becomes insignificant.
+
+Therefore,
+
+```
+O(n + 2)
+```
+
+becomes
+
+```
+O(n)
+```
+
+### Rule
+Ignore constant values.
+```
+O(n + 5)      → O(n)
+O(2n)         → O(n)
+O(100n + 7)   → O(n)
+```
+Big-O only cares about the growth rate.
+---
+
+# Big-O Calculation
+
+## Example 1
+
+```javascript
+function summation(n) {
+    return (n * (n + 1)) / 2;
+}
+```
+
+### Analysis
+
+This function performs only a fixed number of operations:
+
+* Multiplication
+* Addition
+* Division
+* Return
+
+These operations do **not** depend on `n`.
+
+Whether:
+
+```
+n = 10
+```
+
+or
+
+```
+n = 10,000,000
+```
+
+the same number of operations are executed.
+
+### Time Complexity
+
+```
+O(1)
+```
+
+This is called **Constant Time Complexity**.
+
+---
+
+# Nested Loops
+
+## Example 2
+
+```javascript
+for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= i; j++) {
+        // Some code
+    }
+}
+```
+
+### Analysis
+
+Outer loop runs:
+
+```
+n times
+```
+
+Inner loop runs:
+
+```
+1 + 2 + 3 + ... + n
+```
+
+Total operations:
+
+```
+n(n + 1)/2
+```
+
+Ignoring constants:
+
+```
+O(n²)
+```
+
+### Time Complexity
+
+```
+O(n²)
+```
+
+This is called **Quadratic Time Complexity**.
+
+---
+
+## Example 3
+
+```javascript
+for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= i; j++) {
+        for (let k = 1; k <= j; k++) {
+            // Some code
+        }
+    }
+}
+```
+
+### Analysis
+
+There are three nested loops.
+
+Operations grow roughly proportional to:
+
+```
+n³
+```
+
+### Time Complexity
+
+```
+O(n³)
+```
+
+This is called **Cubic Time Complexity**.
+
+---
+
+## Example 4
+
+When the input size is reduced by half every iteration:
+
+```javascript
+while (n > 1) {
+    n = Math.floor(n / 2);
+}
+```
+
+Iterations:
+
+```
+16 → 8 → 4 → 2 → 1
+```
+
+or
+
+```
+1024
+512
+256
+128
+64
+32
+16
+8
+4
+2
+1
+```
+
+The number of iterations grows logarithmically.
+
+### Time Complexity
+
+```
+O(log n)
+```
+
+This is called **Logarithmic Time Complexity**.
+
+Examples:
+
+* Binary Search
+* Finding height of a balanced tree
+
+---
+
+# Space Complexity
+
+Space complexity measures the **extra memory** used by an algorithm.
+
+Common space complexities:
+
+```
+O(1)    Constant
+
+O(log n) Logarithmic
+
+O(n)    Linear
+```
+
+### Examples
+
+#### O(1)
+
+```javascript
+let sum = 0;
+```
+
+Only one variable is used.
+
+---
+
+#### O(n)
+
+```javascript
+let arr = [];
+
+for (let i = 0; i < n; i++) {
+    arr.push(i);
+}
+```
+
+Memory grows with input size.
+
+---
+
+#### O(log n)
+
+Recursive algorithms like Binary Search require stack space proportional to:
+
+```
+log n
+```
+
+---
+
+# Big-O Trend
+
+As input size increases, different complexities grow at different rates.
+
+From **Best** to **Worst**:
+
+| Complexity | Performance      |
+| ---------- | ---------------- |
+| O(1)       | ⭐ Excellent      |
+| O(log n)   | ⭐ Excellent      |
+| O(n)       | ✅ Good           |
+| O(n log n) | 👍 Fair          |
+| O(n²)      | ⚠ Slow           |
+| O(2ⁿ)      | ❌ Very Slow      |
+| O(n!)      | ❌ Extremely Slow |
+
+### Growth Order
+
+```
+O(1)
+      ↓
+O(log n)
+      ↓
+O(n)
+      ↓
+O(n log n)
+      ↓
+O(n²)
+      ↓
+O(2ⁿ)
+      ↓
+O(n!)
+```
+
+Always try to design algorithms toward the top of this list.
+
+---
+
+# Important Points to Remember
+
+## 1. There is no single best algorithm.
+
+The best algorithm depends on:
+
+* Input size
+* Memory available
+* Speed requirements
+* Problem constraints
+
+---
+
+## 2. Multiple algorithms can solve the same problem.
+
+Example:
+
+Sorting can be done using:
+
+* Bubble Sort
+* Merge Sort
+* Quick Sort
+* Heap Sort
+
+Each has different strengths.
+
+---
+
+## 3. The same algorithm can have different implementations.
+
+Example:
+
+Two developers may implement Binary Search differently.
+
+Even though the code looks different, the complexity remains the same.
+
+---
+
+## 4. Write readable code.
+
+In real projects:
+
+✔ Readable code
+
+✔ Maintainable code
+
+✔ Simple logic
+
+are usually more valuable than writing overly clever code.
+
+---
+
+# Big-O of JavaScript Objects
+
+An object is a collection of **key-value pairs**.
+
+Example:
+
+```javascript
+const person = {
+    firstName: "Bruce",
+    lastName: "Wayne"
+};
+```
+
+### Operations
+
+| Operation        | Time Complexity |
+| ---------------- | --------------- |
+| Insert           | O(1)            |
+| Remove           | O(1)            |
+| Access by key    | O(1)            |
+| Search value     | O(n)            |
+| Object.keys()    | O(n)            |
+| Object.values()  | O(n)            |
+| Object.entries() | O(n)            |
+
+### Explanation
+
+#### Insert
+
+```javascript
+person.age = 25;
+```
+
+Constant time.
+
+---
+
+#### Access
+
+```javascript
+person.firstName;
+```
+
+JavaScript directly accesses the property.
+
+```
+O(1)
+```
+
+---
+
+#### Search
+
+If you're searching for a value (not a known key), JavaScript may need to check every property.
+
+```
+O(n)
+```
+
+---
+
+#### Object.keys()
+
+```javascript
+Object.keys(person);
+```
+
+Visits every property.
+
+```
+O(n)
+```
+
+The same applies to:
+
+```javascript
+Object.values()
+
+Object.entries()
+```
+
+---
+
+# Big-O of JavaScript Arrays
+Arrays are ordered collections of values.
+
+Example:
+```javascript
+const odd = [1, 3, 5, 7, 9];
+```
+
+### Operations
+
+| Operation           | Time Complexity |
+| ------------------- | --------------- |
+| Access by index     | O(1)            |
+| Search              | O(n)            |
+| Insert at end       | O(1)            |
+| Remove at end       | O(1)            |
+| Insert at beginning | O(n)            |
+| Remove at beginning | O(n)            |
+| push()              | O(1)            |
+| pop()               | O(1)            |
+| shift()             | O(n)            |
+| unshift()           | O(n)            |
+| concat()            | O(n)            |
+| slice()             | O(n)            |
+| splice()            | O(n)            |
+| forEach()           | O(n)            |
+| map()               | O(n)            |
+| filter()            | O(n)            |
+| reduce()            | O(n)            |
+
+---
+
+## Why?
+
+### Access
+
+```javascript
+arr[5];
+```
+
+JavaScript directly calculates the memory location.
+
+```
+O(1)
+```
+
+---
+
+### Search
+
+```javascript
+arr.includes(7);
+```
+
+May need to check every element.
+
+```
+O(n)
+```
+
+---
+
+### push()
+
+```javascript
+arr.push(10);
+```
+
+Adds to the end.
+
+No shifting required.
+
+```
+O(1)
+```
+
+---
+
+### pop()
+
+```javascript
+arr.pop();
+```
+
+Removes the last element.
+
+```
+O(1)
+```
+
+---
+
+### shift()
+
+```javascript
+arr.shift();
+```
+
+Removes the first element.
+
+Every remaining element shifts left.
+
+```
+O(n)
+```
+
+---
+
+### unshift()
+
+```javascript
+arr.unshift(0);
+```
+
+Adds at the beginning.
+
+Every element shifts right.
+
+```
+O(n)
+```
+
+---
+
+### map(), filter(), reduce(), forEach()
+
+Each processes every element once.
+
+```
+O(n)
+```
+
+---
+
+# Quick Revision
+
+## Time Complexities
+
+| Complexity | Name         | Example                          |
+| ---------- | ------------ | -------------------------------- |
+| O(1)       | Constant     | Object access, `push()`, `pop()` |
+| O(log n)   | Logarithmic  | Binary Search                    |
+| O(n)       | Linear       | Single loop                      |
+| O(n log n) | Linearithmic | Merge Sort, Heap Sort            |
+| O(n²)      | Quadratic    | Two nested loops                 |
+| O(n³)      | Cubic        | Three nested loops               |
+| O(2ⁿ)      | Exponential  | Recursive subset generation      |
+| O(n!)      | Factorial    | Generating all permutations      |
+
+---
+
+## JavaScript Array Big-O Cheat Sheet
+
+| Operation | Complexity |
+| --------- | ---------- |
+| Access    | O(1)       |
+| Search    | O(n)       |
+| push      | O(1)       |
+| pop       | O(1)       |
+| shift     | O(n)       |
+| unshift   | O(n)       |
+| map       | O(n)       |
+| filter    | O(n)       |
+| reduce    | O(n)       |
+| forEach   | O(n)       |
+| slice     | O(n)       |
+| splice    | O(n)       |
+| concat    | O(n)       |
+
+---
+
+## JavaScript Object Big-O Cheat Sheet
+
+| Operation        | Complexity |
+| ---------------- | ---------- |
+| Insert           | O(1)       |
+| Delete           | O(1)       |
+| Access           | O(1)       |
+| Search           | O(n)       |
+| Object.keys()    | O(n)       |
+| Object.values()  | O(n)       |
+| Object.entries() | O(n)       |
