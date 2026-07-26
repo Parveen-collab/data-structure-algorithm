@@ -1,6 +1,12 @@
 ### Javascript Implementaion by Codevolution
 ### Theory by Abdul Bari
 
+### Insertion Sort Explained
+![alt text](image.png)
+
+### Quick Sort Explained
+![alt text](image-1.png)
+
 ### List of Data Structures
 ## 1. Arrays
 
