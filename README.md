@@ -7,6 +7,10 @@
 ### Quick Sort Explained
 ![alt text](image-1.png)
 
+### Merge Sort Explained
+![alt text](image-2.png)
+![alt text](image-3.png)
+
 ### List of Data Structures
 ## 1. Arrays
 
