@@ -24,18 +24,7 @@ This course covers the following topics:
 ---
 
 # What is an Algorithm?
-> An **algorithm** is a set of **well-defined instructions** to solve a particular problem.An algorithm takes an **input**, performs a sequence of steps, and produces an **output**.
-
-```
-Input
-   ↓
-Algorithm
-   ↓
-Output
-```
-
----
-
+> An **algorithm** is a set of **well-defined instructions** to solve a particular problem. An algorithm takes an **input**, performs a sequence of steps, and produces an **output**.
 ---
 
 # Characteristics of an Algorithm
@@ -65,11 +54,8 @@ Learning algorithms helps you:
 * Write faster and better code.
 
 **Important**
-
 One problem can often be solved using many different algorithms.
-
 Each algorithm has its own advantages and disadvantages.
-
 ---
 
 # Algorithm Analysis
@@ -159,14 +145,11 @@ Represents the **Average/Tight Bound**.
 ---
 
 # Big-O Notation
-
 Big-O describes how an algorithm behaves as the input size grows.
 
 It focuses on:
-
 * Growth rate
 * Worst-case performance
-
 Instead of exact running time.
 
 ### Important Characteristics

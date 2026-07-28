@@ -1,0 +1,61 @@
+## Before we begin
+
+* This course is a continuation of the JavaScript Algorithms series.
+* Different programming languages have different data structures. Our choice of language will be **JavaScript**.
+* It is possible to implement a data structure in a few different ways.
+* Please do **not** memorize the implementation.
+
+---
+
+## What is a data structure?
+
+* A data structure is a way to store and organize data so that it can be used efficiently.
+* A data structure is a collection of data values, the relationships among them, and the functions or operations that can be applied to that data.
+
+---
+
+## Why learn data structures?
+
+* Almost every application we build involves data that is modelled in a certain way.
+* To efficiently manage that data, you need data structures.
+* Imagine walking into a library only to find out there is no efficient organization of the books and they are stored randomly.
+
+---
+
+* The difference between a function taking a few milliseconds vs a few seconds or even minutes comes down to the selection of the right data structure.
+* Data structures help you solve problems in a more efficient way, both in terms of time and memory.
+* Learning about data structures also helps you gain a more profound understanding of things you're already aware of.
+
+Examples:
+
+* **DOM** → Tree data structure
+* **Browser Back and Forward** → Stack data structure
+* **OS Job Scheduling** → Queue data structure
+
+---
+
+## Course overview
+
+### Built-in data structures
+
+* Arrays
+* Objects
+* Sets
+* Maps
+
+### Custom data structures
+
+* Stacks
+* Queues
+* Circular Queues
+* Linked Lists
+* Hash Tables
+* Trees
+* Graphs
+
+---
+
+## Prerequisites
+
+* Modern JavaScript
+* JavaScript Algorithms

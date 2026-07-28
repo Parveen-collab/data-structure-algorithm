@@ -1,7 +1,7 @@
 ## Recursion
 
 ### What?
-Recursion is a problem-solving technique where the solution depends on solutions to smaller instances of the same problem.Recursion is when a function calls itself.
+Recursion is a problem-solving technique where the solution depends on solutions to smaller instances of the same problem. Recursion is when a function calls itself.
 
 Why?
 -A great technique to simplify your solution.
@@ -23,7 +23,6 @@ The idea is:
 * Finally, the smaller results are combined to produce the complete result.
 
 This is similar to recursion:
-
 * A function breaks a problem into smaller subproblems.
 * Those subproblems may again break into even smaller subproblems.
 * Eventually, the smallest problems are solved (base case), and the results are combined.
@@ -31,4 +30,4 @@ This is similar to recursion:
 ## A Few Points About Recursion
 * Every recursive solution needs to have a base case. Base case—a condition to terminate the recursion.
 * Recursion might simplify solving a problem, but it does not always translate to a faster solution. A recursive solution may be far worse compared to an iterative solution.
-* Recursion is a topic that is not the most straightforward to understand. Do not give up if you struggle with the concept.
+

@@ -11,63 +11,43 @@
 # Algorithm Design Techniques
 
 ### Brute Force
-
 A simple and exhaustive technique that evaluates every possible outcome to find the best solution.
-
 **Example:** Linear Search
-
 ---
 
 ### Greedy
-
 Choose the best option at the current time, without any consideration for the future.
-
 **Examples:**
-
 * Dijkstra's Algorithm
 * Prim's Algorithm
 * Kruskal's Algorithm
-
 ---
 
 ### Divide and Conquer
-
 Divide the problem into smaller sub-problems. Each sub-problem is then solved, and the partial solutions are recombined to determine the overall solution.
-
 **Examples:**
-
 * Binary Search
 * Quick Sort
 * Merge Sort
 * Tower of Hanoi
-
 ---
 
 ### Dynamic Programming
-
 Divide the problem into smaller but **overlapping** sub-problems. Store the results and reuse them for the same sub-problems. This technique is called **memoization** and improves the time complexity of the algorithm.
-
 **Examples:**
-
 * Fibonacci Numbers
 * Climbing Staircase
-
 ---
 
 ### Backtracking
-
 Generate all possible solutions. Check whether the solution satisfies the given constraints. If the constraints are not satisfied, backtrack and explore a different path to find the solution.
-
 **Example:**
-
 * N-Queens Problem
-
 ---
 
 # Next Steps
 
 Solve more problems:
-
 * Finding the GCD using the Euclidean Algorithm
 * Finding permutations and combinations of a list of numbers
 * Finding the Longest Common Substring in a given string
