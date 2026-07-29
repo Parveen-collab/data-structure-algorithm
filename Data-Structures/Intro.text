@@ -45,13 +45,13 @@ Examples:
 
 ### Custom data structures
 
-* Stacks
-* Queues
-* Circular Queues
-* Linked Lists
-* Hash Tables
-* Trees
-* Graphs
+* Stacks (Array)
+* Queues (Array (or Object for better performance))
+* Circular Queues (Array)
+* Linked Lists (Objects)
+* Hash Tables (Object or Map)
+* Trees (Object)
+* Graphs (Object, Map, Array, or Set)
 
 ---
 

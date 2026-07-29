@@ -16,6 +16,27 @@
 ![alt text](image-5.png)
 ![alt text](image-6.png)
 
+### Stack Visualization
+![alt text](image-7.png)
+
+### Queue Visualization-Enqueue
+![alt text](image-8.png)
+
+### Queue Visualization-Enqueue
+![alt text](image-9.png)
+
+### Circular Queue Visualization-Enqueue
+![alt text](image-10.png)
+
+### Circular Queue visualization-Dequeue
+![alt text](image-11.png)
+
+### Hash Table Visualization
+![alt text](image-12.png)
+
+### Hash Table Visualization-Handling Collisions
+![alt text](image-13.png)
+
 ### List of Data Structures
 # Data Structures You Need for LeetCode (Priority)
 ### 🟢 Must Know (90% of interview problems)
