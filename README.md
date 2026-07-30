@@ -31,11 +31,21 @@
 ### Circular Queue visualization-Dequeue
 ![alt text](image-11.png)
 
+### Linked List
+![alt text](image-14.png)
+
+### Linked List with Tail
+![alt text](image-15.png)
+
+### Doubly Linked List
+![alt text](image-16.png)
+
 ### Hash Table Visualization
 ![alt text](image-12.png)
 
 ### Hash Table Visualization-Handling Collisions
 ![alt text](image-13.png)
+
 
 ### List of Data Structures
 # Data Structures You Need for LeetCode (Priority)

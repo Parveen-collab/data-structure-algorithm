@@ -1,0 +1,32 @@
+## Course Summary
+
+### Built-in Data Structures
+
+* Arrays
+* Objects
+* Sets
+* Maps
+
+### Custom Data Structures
+
+* Stacks
+* Queues
+* Circular Queues
+* Linked Lists
+* Linked Lists with Tail
+* Doubly Linked Lists
+* Hash Tables
+* Trees
+* Binary Search Trees
+* Graphs
+
+---
+
+## Further Learning
+
+* Priority Queue
+* Circular Linked Lists
+* AVL Trees, Red-Black Trees, and Tries
+* Directed Acyclic Graphs (DAGs)
+* Prim's, Kruskal's, and Floyd's Algorithms
+* Solve problems that utilize these data structures
