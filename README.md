@@ -46,6 +46,26 @@
 ### Hash Table Visualization-Handling Collisions
 ![alt text](image-13.png)
 
+### Tree Data Structure Visualization
+![alt text](image-17.png)
+
+### Binary Tree Data Structure
+![alt text](image-18.png)
+
+### Binary Search Tree Data Structure
+![alt text](image-19.png)
+
+### DFS Traversal
+### PreOrder Traversal
+![alt text](image-20.png)
+
+### InOrder Traversal
+![alt text](image-21.png)
+
+### BFS Traversal
+![alt text](image-22.png)
+![alt text](image-23.png)
+
 
 ### List of Data Structures
 # Data Structures You Need for LeetCode (Priority)
