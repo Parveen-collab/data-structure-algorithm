@@ -2,69 +2,69 @@
 ### Theory by Abdul Bari
 
 ### Insertion Sort Explained
-![alt text](image.png)
+![alt text](Asset/image.png)
 
 ### Quick Sort Explained
-![alt text](image-1.png)
+![alt text](Asset/image-1.png)
 
 ### Merge Sort Explained
-![alt text](image-2.png)
-![alt text](image-3.png)
+![alt text](Asset/image-2.png)
+![alt text](Asset/image-3.png)
 
 ### Tower Of Hanoi Explained
-![alt text](image-4.png)
-![alt text](image-5.png)
-![alt text](image-6.png)
+![alt text](Asset/image-4.png)
+![alt text](Asset/image-5.png)
+![alt text](Asset/image-6.png)
 
 ### Stack Visualization
-![alt text](image-7.png)
+![alt text](Asset/image-7.png)
 
 ### Queue Visualization-Enqueue
-![alt text](image-8.png)
+![alt text](Asset/image-8.png)
 
 ### Queue Visualization-Enqueue
-![alt text](image-9.png)
+![alt text](Asset/image-9.png)
 
 ### Circular Queue Visualization-Enqueue
-![alt text](image-10.png)
+![alt text](Asset/image-10.png)
 
 ### Circular Queue visualization-Dequeue
-![alt text](image-11.png)
+![alt text](Asset/image-11.png)
 
 ### Linked List
-![alt text](image-14.png)
+![alt text](Asset/image-14.png)
 
 ### Linked List with Tail
-![alt text](image-15.png)
+![alt text](Asset/image-15.png)
 
 ### Doubly Linked List
-![alt text](image-16.png)
+![alt text](Asset/image-16.png)
 
 ### Hash Table Visualization
-![alt text](image-12.png)
+![alt text](Asset/image-12.png)
 
 ### Hash Table Visualization-Handling Collisions
-![alt text](image-13.png)
+![alt text](Asset/image-13.png)
 
 ### Tree Data Structure Visualization
-![alt text](image-17.png)
+![alt text](Asset/image-17.png)
 
 ### Binary Tree Data Structure
-![alt text](image-18.png)
+![alt text](Asset/image-18.png)
 
 ### Binary Search Tree Data Structure
-![alt text](image-19.png)
+![alt text](Asset/image-19.png)
 
 ### DFS Traversal
 ### PreOrder Traversal
-![alt text](image-20.png)
+![alt text](Asset/image-20.png)
 
 ### InOrder Traversal
-![alt text](image-21.png)
+![alt text](Asset/image-21.png)
 
 ### BFS Traversal
-![alt text](image-22.png)
-![alt text](image-23.png)
+![alt text](Asset/image-22.png)
+![alt text](Asset/image-23.png)
 
 
 ### List of Data Structures
