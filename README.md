@@ -66,6 +66,15 @@
 ![alt text](Asset/image-22.png)
 ![alt text](Asset/image-23.png)
 
+### Graph Data Structure
+![alt text](Asset/image-27.png)
+
+![alt text](Asset/image-24.png)
+
+![alt text](Asset/image-25.png)
+
+![alt text](Asset/image-26.png)
+
 
 ### List of Data Structures
 # Data Structures You Need for LeetCode (Priority)
